@@ -1,7 +1,7 @@
-import {dbConnect} from "../../../lib/dbConnect";
-import UserModel from "../../../model/User.js";
+import { dbConnect } from "../../../../lib/dbConnect.js";
+import UserModel from "../../../../model/User.js";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "../auth/[...nextauth]/options";
+import { authOptions } from "../../auth/[...nextauth]/options";
 import { NextResponse } from "next/server";
 
 export async function DELETE(request, { params }) {

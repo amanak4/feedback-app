@@ -9,9 +9,20 @@ import {Loader2} from 'lucide-react';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button';
 import {Input} from '@/components/ui/input';
-import { verifySchema } from '../../../../Schemas/verifySchema';
+import { verifySchema } from '../../../../schemas/verifySchema';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useState } from 'react';
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * This component renders a form for the user to enter the verification code sent to their email.
+ *
+ * If the code is valid, it will redirect the user to the sign-in page.
+ *
+ * If the code is invalid, it will display an error message.
+ *
+ * The form will be disabled while the code is being verified.
+ */
+/******  b9e9f56c-46bc-450b-bbc3-186879bfb781  *******/
 export default function Verify() {
     const router=useRouter();
     const params=useParams();
